@@ -20,12 +20,19 @@ body {
   font-family: "Montserrat", "Poppins", Tahoma;
   background: #0f0d11;
   display: flex;
-  align-items: center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
 }
-
+section{
+  font-family: "Montserrat", "Poppins", Tahoma;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  padding-left: calc(50% - 400px);
+}
 h1, h2, h3, h4 {
   font-weight: 400;
 }
@@ -745,19 +752,30 @@ header li:nth-child(1) {
 
 
 #navbar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top:10px;
+  width: 100%;
+  position: absolute;
+  justify-content: right;
+  display:inline-flex;
+  background-color: rgba(229,229,229,0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
 }
 #navbar li{
   list-style: none;
   padding: 0 20px;
 }
+pp{
+  list-style: none;
+  padding: 0 20px;
+  justify-content: left;
+}
 #navbar li a{
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
-  color:#2C3333;
+  color:#888;
   transition: 0.3s ease;
 }
 #navbar li a:hover,
