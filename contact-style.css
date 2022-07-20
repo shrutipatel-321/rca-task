@@ -1,0 +1,116 @@
+body {
+  font-family: "proxima-nova", sans-serif;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0px;
+  cursor: auto;
+}
+
+#container {
+  --target: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0) var(--target), #fff var(--target));
+  display: -webkit-flex;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 150px;
+  color: white;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  text-align: center;
+  letter-spacing: -0.02em;
+  background: linear-gradient(to right, #fff var(--target), #000 var(--target));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  display: block;
+  line-height: 0.95;
+}
+h1 span {
+  font-size: 0.3em;
+  display: block;
+  font-weight: lighter;
+  font-kerning: normal;
+}
+
+.cursor {
+  position: fixed;
+  background: rgba(0,255,255,1);
+  width: 20px;
+  height: 20px;
+  margin: -10px -10px -10px -10px;
+  padding: 0;
+  border-radius: 50%;
+  border-color: black;
+  border-width: medium;
+  will-change: transform;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  #transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: rotateX(180deg);
+}
+
+form{
+  background: white;
+
+}
+
+
+#navbar{
+  top:-20px;
+  width: 100%;
+  position: absolute;
+  justify-content: right;
+
+  display:inline-flex;
+  background-color: rgba(229,229,229,0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+}
+#navbar li{
+  list-style: none;
+  padding: 10px 20px;
+
+}
+pp{
+  list-style: none;
+  justify-content: left;
+}
+#navbar li a{
+
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color:#888;
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: #A5C9CA;
+  text-decoration: underline;
+}
+
