@@ -1,282 +1,305 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Our Mall</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-  </head>
-  <body>
-    <section id="header">
-      <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
-      <div>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Exploring UI Animation #3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<section id="head">
+    <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+    <div>
         <ul id="navbar">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="game.html">Game</a></li>
-          <li><a href="cinema.html">Cinema</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="cinema.html">Cinema</a></li>
+            <li><a href="cinema.html">Contact</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
 
 
         </ul>
 
-      </div>
+    </div>
+
+</section>
+<section id = "newbanner">
+
+    <svg id="icons" class="hide">
+        <symbol id="arrow" viewBox="0 0 451.846 451.847"><path fill="#FFF" d="M345.44 248.292l-194.286 194.28c-12.36 12.366-32.397 12.366-44.75 0-12.354-12.353-12.354-32.39 0-44.743l171.914-171.91-171.91-171.905c-12.353-12.36-12.353-32.394 0-44.748 12.355-12.36 32.392-12.36 44.75 0L345.446 203.55c6.177 6.18 9.262 14.27 9.262 22.367 0 8.098-3.09 16.195-9.267 22.372z"/></symbol>
+    </svg>
+
+    <div class="slider-content">
+        <div class="header-wrapper">
+            <div class="header">
+                <!--<div class="menu-wrapper">
+                  <div class="menu-hamburger"></div>
+                </div>-->
+                <div class="logo-wrapper">
+                    <div class="logo"><span>ambience</span>mall</div>
+                </div>
+                <div class="shop-wrapper"></div>
+            </div>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <div class="control-nav">
+                    <ul></ul>
+                </div>
+                <div class="nav-wrapper">
+                    <div class="next">
+                        <div class="next-color">
+                            <span>Ready to shop?</span>
+                            <span class="color">exclusive offers</span>
+                        </div>
+                        <div class="next-button">
+                            <svg>
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide active" data-order="1" data-color="#ff384b" data-name="exclusive offers">
+                    <div class="slide-content ">
+                        <div class="clip-svg">
+                            <img class="" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/boldybae1.jpg" alt="" />
+                            <div class="title-wrapper">
+                                <h1>Buy One Get One FREE</h1>
+                                <h2>exclusive deals</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide " data-order="2" data-color="#f59600" data-name="orange">
+                    <div class="slide-content ">
+                        <div class="clip-svg">
+                            <img class="" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/boldybae2.jpg" alt="" />
+                            <div class="title-wrapper bigger">
+                                <h1>Super Summers</h1>
+                                <h2>get ready for the upcoming season</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide " data-order="3" data-color="#0028f2" data-name="exclusive offers">
+                    <div class="slide-content ">
+                        <div class="clip-svg">
+                            <img class="" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/boldybae3.jpg" alt="" />
+                            <div class="title-wrapper bigger">
+                                <h1>Classy Dresses</h1>
+                                <h2>I'm not the only one who is late</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <ul>
+                <li><a href="shop.html">SHOP NOW</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="feature" class="section-p1">
+    <div class="fe-box">
+        <img src="images/features/f1.png" alt="" >
+        <h6>Free Shipping</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="images/features/f2.png" alt="" >
+        <h6>Online Order</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="images/features/f3.png" alt="" >
+        <h6>Save Money</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="images/features/f4.png" alt="" >
+        <h6>Promotions</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="images/features/f5.png" alt="" >
+        <h6>Happy Sell</h6>
+
+    </div>
+    <div class="fe-box">
+        <img src="images/features/f6.png" alt="" >
+        <h6>24*7 Support
 
-    </section>
-    <section class="hero">
-      <h4 class="hh4">Trade-in-offer</h4>
-      <h2 class="hh2">Super Discount Offers</h2>
-      <p class="hhp">Save more with coupons & up to 70% off</p>
-      <br>
-      <br>
-      <button type="button" name="button" class="btn
-
-
-
-
-
-
-      ">Shop Now</button>
-
-    </section>
-     <section id="feature" class="section-p1">
-       <div class="fe-box">
-         <img src="images/features/f1.png" alt="" >
-         <h6>Free Shipping</h6>
 
-       </div>
-       <div class="fe-box">
-         <img src="images/features/f2.png" alt="" >
-         <h6>Online Order</h6>
 
-       </div>
-       <div class="fe-box">
-         <img src="images/features/f3.png" alt="" >
-         <h6>Save Money</h6>
+        </h6>
 
-       </div>
-       <div class="fe-box">
-         <img src="images/features/f4.png" alt="" >
-         <h6>Promotions</h6>
+    </div>
 
-       </div>
-       <div class="fe-box">
-         <img src="images/features/f5.png" alt="" >
-         <h6>Happy Sell</h6>
 
-       </div>
-       <div class="fe-box">
-         <img src="images/features/f6.png" alt="" >
-         <h6>24*7 Support
+</section>
+<section id="product1" class="section-p1">
+    <h2>Featured Product</h2>
+    <p>Summer Collection</p>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="images/products/f8.jpg" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Peplum Top</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <h4>$56</h4>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="pro">
+            <img src="images/products/f1.jpg" alt="">
+            <div class="des">
+                <span>HRX</span>
+                <h5>Abstract Element Leaf Pattern Printed Shirts</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+                <h4>$78</h4>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+        </div>
+        <div class="pro">
+            <img src="images/products/f7.jpg" alt="">
+            <div class="des">
+                <span>asos</span>
+                <h5>Women Trouse</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
 
+                </div>
+                <h4>$44</h4>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
 
+            </div>
 
-         </h6>
+        </div>
 
-       </div>
 
 
-     </section>
-     <section id="product1" class="section-p1">
-       <h2>Featured Product</h2>
-       <p>Summer Collection</p>
-       <div class="pro-container">
-         <div class="pro">
-           <img src="images/products/f8.jpg" alt="">
-           <div class="des">
-             <span>adidas</span>
-             <h5>Peplum Top</h5>
-             <div class="star">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
 
-             </div>
-             <h4>$56</h4>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
 
-           </div>
+        <div class="pro">
+            <img src="images/products/f6.jpg" alt="">
+            <div class="des">
+                <span>shein</span>
+                <h5>Men Solid Stylish Casual Shirts</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
 
-         </div>
+                </div>
+                <h4>$72</h4>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
 
-         <div class="pro">
-           <img src="images/products/f1.jpg" alt="">
-           <div class="des">
-             <span>HRX</span>
-             <h5>Abstract Element Leaf Pattern Printed Shirts</h5>
-             <div class="star">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="far fa-star"></i>
+            </div>
 
-             </div>
-             <h4>$78</h4>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
 
-           </div>
 
-         </div>
-         <div class="pro">
-           <img src="images/products/f7.jpg" alt="">
-           <div class="des">
-             <span>asos</span>
-             <h5>Women Trouse</h5>
-             <div class="star">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
+    </div>
 
-             </div>
-             <h4>$44</h4>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+</section>
 
-           </div>
+<div class="fot">
 
-         </div>
 
+    <footer class="section-p1" class="footer">
+        <div class="col">
+            <img src="images/logo.png" alt="" class="logo">
+            <h4>Contact</h4>
+            <p> <strong>Address : </strong>3rd Floor, Mall Office, Marhatal, <br>
+                Jabalpur - 482002, Near Civic Centre </p>
+            <p> <strong>Phone No. :</strong>7614084923,8086452921</p>
+            <p> <strong>Hours :</strong>10:00-18:00 Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <br>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
 
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <p>About Us</p>
+            <p>Delivery Information</p>
+            <p>Terms & Condition</p>
 
 
+        </div>
+        <div class="col">
+            <h4>Account</h4>
+            <p>Sign In</p>
+            <p>Veiw Cart</p>
+            <p>Track My Order</p>
 
-         <div class="pro">
-           <img src="images/products/f6.jpg" alt="">
-           <div class="des">
-             <span>shein</span>
-             <h5>Men Solid Stylish Casual Shirts</h5>
-             <div class="star">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
 
-             </div>
-             <h4>$72</h4>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
 
-           </div>
+            </div>
 
-         </div>
 
+        </div>
 
-       </div>
 
-     </section>
-     <section id="sm-banner" class="section-p1">
-       <div class="banner-box">
-         <h4>crazy deals</h4>
-         <h2>buy 1 get 1 free</h2>
-         <span>Classic dress on sale</span>
-         <button class="white">Learn More</button>
 
-       </div>
-       <div class="banner-box banner-box2">
-         <h4>super summers</h4>
-         <h2>upcomig season</h2>
-         <span>Classic dress on sale</span>
-         <button class="white">Collection</button>
+</div>
 
-       </div>
+</footer>
+<p class="copyright">@2022 ambience mall</p>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
 
-     </section>
-     <section id="banner3">
-       <div class="banner-box">
-
-         <h2>SEASONAL SALE</h2>
-         <h3>Winter Collection-70% off</h3>
-
-
-
-
-       </div>
-       <div class="banner-box banner-box3">
-
-         <h2>CLASSY DRESS</h2>
-         <h3>Party Wear</h3>
-
-
-
-
-       </div>
-       <div class="banner-box banner-box4">
-
-         <h2>TRENDING JACKETS</h2>
-         <h3>Winter Collection-2022</h3>
-
-
-
-
-       </div>
-
-     </section>
-     <br>
-     <br>
-     <br>
-     <footer class="section-p1" class="footer">
-       <div class="col">
-         <img src="images/logo.png" alt="" class="logo">
-         <h4>Contact</h4>
-         <p> <strong>Address : </strong>3rd Floor, Mall Office, Marhatal, <br>
-           Jabalpur - 482002, Near Civic Centre </p>
-         <p> <strong>Phone No. :</strong>7614084923,8086452921</p>
-         <p> <strong>Hours :</strong>10:00-18:00 Mon-Sat</p>
-         <div class="follow">
-           <h4>Follow Us</h4>
-           <br>
-           <div class="icon">
-             <i class="fab fa-facebook-f"></i>
-             <i class="fab fa-twitter"></i>
-             <i class="fab fa-instagram"></i>
-             <i class="fab fa-youtube"></i>
-
-           </div>
-         </div>
-       </div>
-           <div class="col">
-             <h4>About</h4>
-             <p>About Us</p>
-             <p>Delivery Information</p>
-             <p>Terms & Condition</p>
-
-
-           </div>
-           <div class="col">
-             <h4>Account</h4>
-             <p>Sign In</p>
-             <p>Veiw Cart</p>
-             <p>Track My Order</p>
-
-
-           </div>
-           <div class="col install">
-             <h4>Install App</h4>
-             <p>From App Store or Google Play</p>
-             <div class="row">
-               <img src="images/pay/app.jpg" alt="">
-               <img src="images/pay/play.jpg" alt="">
-
-             </div>
-
-
-           </div>
-
-
-
-       </div>
-
-     </footer>
-      <p class="copyright">@2022 ambience mall</p>
-    <script src="script.js">
-
-    </script>
-
-  </body>
+</body>
 </html>
